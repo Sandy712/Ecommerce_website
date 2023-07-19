@@ -68,7 +68,7 @@ export default function Navbar() {
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="/"></a>
+                    <a className="dropdown-item" href="/">Something</a>
                   </li>
                 </ul>
               </li>
