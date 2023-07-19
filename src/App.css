@@ -1,0 +1,16 @@
+.navbar-nav > li{
+    margin-left:6px;
+    margin-right:22px;
+  }
+  .form-control{
+    border-radius: 20px;
+    
+    border: 1px solid gray;
+  }
+  form > button{
+    margin-left: -5px;
+    border: none;
+    outline: none !important;
+    box-shadow: none;
+    background: transparent;
+  }
