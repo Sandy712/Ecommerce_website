@@ -22,3 +22,6 @@ form>button {
   box-shadow: none;
   background: transparent;
 }
+body{
+  background-color: lightblue;
+}
