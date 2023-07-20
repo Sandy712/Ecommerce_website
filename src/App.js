@@ -1,5 +1,5 @@
 import './App.css';
-import Carousel from './component/Carousel';
+import Mainslider from './component/Mainslider';
 import Navbar from './component/Navbar';
 
 
@@ -8,7 +8,7 @@ function App() {
   return (
     <>  
     <Navbar/>
-    <Carousel/>
+    <Mainslider/>
     </>
   );
 }
