@@ -7,10 +7,10 @@ export default function Sliderformat({title,desc,cover}) {
   return (
     <Container className='box' >
         <Row>
-          <Col md={6}>
+          <Col md={5}>
             <h1>{title}</h1>
             <p>{desc}</p>
-            <button className='btn-primary'>Visit Collections</button>
+            <button className='btn-primary'>Shop now</button>
           </Col>
           <Col md={6}>
             <img src={cover} alt="#" />

@@ -1,4 +1,4 @@
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
     .homeSlide {
         width: 100vw;
         height: 60vh;
@@ -17,16 +17,16 @@
         width: 100vw;
         height: 70vh;
     }
-}
+} */
 
-.homeSlide {
-    background-color: rgb(68, 154, 49);
+/* .homeSlide {
+    background-color: rgb(213, 219, 211);
     display: flex;
     justify-content: center;
     align-items: center;
-}
+ } */
 
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
     .box {
         width: 100vw;
         height: 50vh;
@@ -45,7 +45,7 @@
         width: 100vw;
         height: 60vh;
     }
-}
+} */
 
 
 .box {
