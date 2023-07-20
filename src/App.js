@@ -1,6 +1,8 @@
+// import Slider from './component/slider';
 import './App.css';
 import Carousel from './component/Carousel';
 import Navbar from './component/Navbar';
+
 
 
 
@@ -9,6 +11,7 @@ function App() {
     <>  
     <Navbar/>
     <Carousel/>
+     
     </>
   );
 }
