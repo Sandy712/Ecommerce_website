@@ -9,9 +9,10 @@ import Sliderformat from "./Sliderformat";
 export default function Mainslider() {
   const settings = {
     nav: false,
+    // dots: true,
     infinite: true, // Loop the carousel
     autoplay: true, // Autoplay the carousel
-    // speed: 2000, // Delay between slides in milliseconds
+    speed: 1000, // Delay between slides in milliseconds
     slidesToShow: 1, // Number of slides to show at once
     slidesToScroll: 1, // Number of slides to scroll at once
     

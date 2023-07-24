@@ -37,12 +37,12 @@ import watchSlide from "../Images/watch-07.png";
 
 
 export const SliderData = [
-  // {
-  //     id: 1,
-  //     title: "50% Off For Your First Shopping",
-  //     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis lobortis consequat eu.",
-  //     cover: sofaSlide,
-  // },
+  {
+      id: 1,
+      title: "50% Off For Your First Shopping",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis lobortis consequat eu.",
+      cover: sofaSlide,
+  },
   {
       id: 2,
       title: "50% Off For Your First Shopping",
@@ -59,7 +59,7 @@ export const SliderData = [
       id: 4,
       title: "50% Off For Your First Shopping",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis lobortis consequat eu, quam etiam at quis ut convallis.",
-      cover: wireless01,
+      cover: watchSlide,
   },
    
 ];

@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './images/img1.jpg';
+import logo from './images/img2.jpg';
 
 const Companies = () => {
   return (
@@ -15,7 +15,7 @@ const Companies = () => {
                         <h1>smart band 4</h1>
                         <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non dolores quam impedit
                             obcaecati adipisci aspernatur earum, neque sunt eos nulla!</small>
-                        <a href="" className="btn">Buy Now! &#8594;</a>
+                        <a href="/" className="btn">Buy Now! &#8594;</a>
                     </div>
                 </div>
             </div>
