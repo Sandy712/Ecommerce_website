@@ -1,12 +1,12 @@
 // Frontenend structured to how show the product information 
-//Format for showing the product name,price,addtocart options,rating 
+//Format for showing the product name,price,addtoCart options,rating 
 
 
 import React from 'react'
 import { Container, Row } from "react-bootstrap"
 import Product from './Product'
 
-export default function Section({title,bgColor,productItems,AddToCart}) {
+export default function Section({title,bgColor,productItems,addtoCart}) {
   return (
     <section style={{background:bgColor}}>
         <Container>
@@ -16,7 +16,7 @@ export default function Section({title,bgColor,productItems,AddToCart}) {
             <Row className='justify-content-center'>
                 {productItems.map((productItem)=>{
                     return (
-                        <Product key={productItem.id} title={title} productItem={productItem} addtocart={AddToCart}/>
+                        <Product key={productItem.id} title={title} productItem={productItem} addtoCart={addtoCart}/>
                     )
                 })}
             </Row>

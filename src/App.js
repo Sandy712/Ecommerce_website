@@ -5,6 +5,7 @@ import Navbar from './component/Navbar';
 // import { products } from "./utlis/product";
 import Home from "./component/Home";
 import Footer from "./component/Footer";
+import Cartpage from "./component/Cartpage";
 
 
 
@@ -62,6 +63,7 @@ function App() {
         <Navbar/>
         <Routes>
           <Route exact path="/" element={<Home/>}/>
+          <Route path="/cart" element={<Cartpage/>}/>
 
 
         </Routes>

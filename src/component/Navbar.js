@@ -32,17 +32,17 @@ export default function Navbar() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" href="/">
+                <a className="nav-link active" href="/shop">
                   Shop
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" href="/">
+                <a className="nav-link active" href="/exclusive">
                   Exclusive
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link " href="/">
+                <a className="nav-link " href="/cart">
                   <FontAwesomeIcon icon={faShoppingCart} />
                 </a>
               </li>
