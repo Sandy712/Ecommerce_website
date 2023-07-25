@@ -6,7 +6,12 @@ import Navbar from './component/Navbar';
 import Home from "./component/Home";
 import Footer from "./component/Footer";
 import Cartpage from "./component/Cartpage";
+import  './component/style/style.scss';
 
+import Main from "./component/shop/Main";
+import Men from "./component/shop/Men";
+import Women from "./component/shop/Women";
+import Children from "./component/shop/Children";
 
 
 
@@ -64,6 +69,10 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home/>}/>
           <Route path="/cart" element={<Cartpage/>}/>
+          <Route exact path="/shop" element={<Main/>}></Route>
+          <Route exact path="/men" element={<Men/>}></Route>
+          <Route exact path="/women" element={<Women/>}></Route>
+          <Route exact path="/children" element={<Children/>}></Route>
 
 
         </Routes>

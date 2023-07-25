@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+ 
 
 export default function Navbar() {
   return (
@@ -19,13 +20,16 @@ export default function Navbar() {
               type="search"
               placeholder="Search"
               aria-label="Search"
+              style={{borderRadius:20}}
             />
-            <button className="button" type="submit">
+            <button className="button" type="submit" >
               <FontAwesomeIcon icon={faMagnifyingGlass} size="lg" />
             </button>
           </form>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav ms-auto mb-2 mb-lg-0 mx-4">
+            <ul className="navbar-nav ms-auto mb-2 mb-lg-0 mx-4" 
+            
+            >
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="/">
                   Home
@@ -87,6 +91,7 @@ export default function Navbar() {
           </button>
         </div>
       </nav>
+       
     </>
   );
 }
