@@ -1,28 +1,42 @@
-import React from 'react';
-import logo from './images/img2.jpg';
+import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { Container } from "react-bootstrap";
+import { discoutProducts } from "../utlis/product";
+import Exclusivefor from "./Exclusivefor";
 
-const Companies = () => {
-  return (
-    <div>
-      <div className="offer">
-            <div className="small-container">
-                <div className="row">
-                    <div className="col-2">
-                        <img src={logo} alt="" className="offer-img"/>
-                    </div>
-                    <div className="col-2 content">
-                        <p>exclusively available on redstore</p>
-                        <h1>smart band 4</h1>
-                        <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non dolores quam impedit
-                            obcaecati adipisci aspernatur earum, neque sunt eos nulla!</small>
-                        <a href="/" className="btn">Buy Now! &#8594;</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
+
+export default function Exclusive() {
+    const settings = {
+        nav: false,
+        dots: true,
+        infinite: true, // Loop the carousel
+        autoplay: true, // Autoplay the carousel
+        speed: 1000, // Delay between slides in milliseconds
+        slidesToShow: 1, // Number of slides to show at once
+        slidesToScroll: 1, // Number of slides to scroll at once
+        
+    };
+    return (
+        <section className="homeSlide">
+            <Container>
+                <Slider {...settings}>
+                    {discoutProducts.map((value,index)=>{
+                        return(
+                            <Exclusivefor
+                            key={index}
+                            productName={value.productName}
+                            imgUrl={value.imgUrl}
+                            shortDesc={value.shortDesc}
+                            />
+                        )
+                    })}    
+                </Slider>
+            </Container>
+        </section>
+    
     
   )
 }
-
-export default Companies
