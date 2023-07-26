@@ -16,9 +16,9 @@ export default function Cartpage() {
         window.scrollTo(0,0);
         if(CartItem.length===0){
             const sortedcart=localStorage.getItem("cartItem");
-            setCartItem((JSON.parse(sortedcart)));
+            setCartItem(JSON.parse(sortedcart));
         }
-    })
+    },[])
 
   return (
     <section className="cart-item">

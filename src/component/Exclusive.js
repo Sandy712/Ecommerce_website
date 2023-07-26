@@ -11,7 +11,7 @@ import Exclusivefor from "./Exclusivefor";
 export default function Exclusive() {
     const settings = {
         nav: false,
-        dots: true,
+        dots: false,
         infinite: true, // Loop the carousel
         autoplay: true, // Autoplay the carousel
         speed: 1000, // Delay between slides in milliseconds
@@ -20,7 +20,7 @@ export default function Exclusive() {
         
     };
     return (
-        <section className="homeSlide">
+        <section className="homeSlide" >
             <Container>
                 <Slider {...settings}>
                     {discoutProducts.map((value,index)=>{

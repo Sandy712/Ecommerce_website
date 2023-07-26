@@ -65,10 +65,7 @@ function App() {
           <Route exact path="/shop" element={<Shoppage/>}/>
           <Route exact path="/shop/:id" element={<ProductsDetail/>}/>
           <Route exact path="/cart" element={<Cartpage/>}/>
-          {/* <Route exact path="/shop" element={<Main/>}></Route>
-          <Route exact path="/men" element={<Men/>}></Route>
-          <Route exact path="/women" element={<Women/>}></Route>
-          <Route exact path="/children" element={<Children/>}></Route> */}
+          
 
 
         </Routes>

@@ -1,26 +1,30 @@
-.form-control{
-    // margin-right: 30px;
-    margin-left: 30px;
-    width: 220px;
-    border: 1px solid black;
-    // padding: 15px;
-}
+// .form-control{
+//     // margin-right: 30px;
+//     margin-left: 30px;
+//     width: 220px;
+//     border: 1px solid black;
+//     // padding: 15px;
+// }
 .navbar-nav li{
     margin-left: 35px;
     margin-right: -11px;
+}
+.navbar{
+    // padding: 0;
+    margin: 0;
+    width: 100%;
+}
+* {
+    // box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 .button{
     background: transparent;
     border-style: none;
     margin-left: -5px;
 }
-.container-fluid{
-    background: white;
-    box-shadow:  0px 10px 14px 2px gray;;
-    height: 70px;
-    width: 100%;
-    
-}
+//  
 .small-container{
     max-width: 1080px;
     margin: auto;
@@ -68,5 +72,30 @@
     margin-right: 10px;
 
 }
-
+.desc{
+    cursor: pointer;
+    font-weight: 500;
+}
+.rev{
+    cursor: pointer;
+    font-weight: 500;
+}
+.product-add {
+    background-color: #0f3460;
+    border-radius: 7px;
+    color: #fff;
+    font-size: 12px;
+    padding: 5px 15px;
+    margin-left: 10px;
+    
+  } 
+  .product-page .qty-input {
+    border: 1px solid #000;
+    border-radius: 5px;
+    color: #000;
+    font-size: 15px;
+    height: 20px;
+    margin: 20px 0;
+    padding: 15px;
+    width: 80px;}
 

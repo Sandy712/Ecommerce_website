@@ -5,7 +5,7 @@ import "./Sliderformatcss.css";
 
 export default function Exclusivefor({productName,shortDesc,imgUrl}) {
   return (
-    <Container className="box">
+    <Container className="box" >
       <Row>
         <Col md={5}>
           <img className="img " src={imgUrl} alt="#" />

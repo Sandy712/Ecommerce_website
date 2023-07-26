@@ -6,6 +6,7 @@ import { useParams } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import Shoplist from "./Shoplist";
+import "./style/style.scss";
 
 
 export default function ProductsDetail() {
@@ -19,12 +20,21 @@ export default function ProductsDetail() {
       setSelectedProduct(JSON.parse(storedproduct));
     }
     
-    const [quantity, setQuantity] = useState(1);
-    const handleQuantityChange = (event) => {
-        setQuantity(parseInt(event.target.value));
+    const [quantity , setquantity] = useState(0);
+    const addtocart =()=>{
+      const count = parseInt(localStorage.getItem('quantity')) || 0;
+    const updatedCount = count + 1;
+    // localStorage.setItem('quantity', updatedCount);
+    setquantity(updatedCount);
     };
 
+    useEffect(() => {
+      const count = parseInt(localStorage.getItem('quantity')) || 0;
+      setquantity(count);
+    }, []);
+
     useEffect(()=>{
+      window.scrollTo(0,0);
       setRelatedProducts(products.filter(item=>item.category===selectedProduct?.category));
     },[selectedProduct])
 
@@ -39,7 +49,7 @@ export default function ProductsDetail() {
                   <img src={selectedProduct?.imgUrl} alt="/" />
                 </Col>
                 <Col md={7}>
-                  <h2> title={selectedProduct?.productName}</h2>
+                  <h2> {selectedProduct?.productName}</h2>
                   <div className="rate">
                 <FontAwesomeIcon icon={faStar} style={{color: "#fbdf50",}}/>
                 <FontAwesomeIcon icon={faStar} style={{color: "#fbdf50",}}/>
@@ -52,8 +62,8 @@ export default function ProductsDetail() {
                   <span className="price">${selectedProduct?.price}</span>
                 </div>
                 <p className="short-desc">${selectedProduct?.shortDesc}</p>
-                <input className="qty-input" type="integer" placeholder="qty" value={quantity} onChange={handleQuantityChange}/>
-                <button className="product-add" onClick={()=>addtoCart(selectedProduct,quantity)}>Add to Cart</button>
+                <input className="qty-input" type="integer" placeholder="" value={quantity} />
+                <button className="product-add" onClick={addtocart}>Add to Cart</button>
                 </Col>
               </Row>
             </Container>
@@ -61,10 +71,10 @@ export default function ProductsDetail() {
         <section className="product-review">
           <Container>
             <ul>
-            <li style={{color:listSelected ==="desc"?"black":"#9c9b9b"}} onClick={()=> setListSelected("desc")}>
+            <li className='desc' style={{color:listSelected ==="desc"?"black":"#9c9b9b"}} onClick={()=> setListSelected("desc")}>
                             Description
                         </li>
-                        <li style={{color:listSelected ==="rev"?"black":"#9c9b9b"}} onClick={()=> setListSelected("rev")}>
+                        <li className="rev" style={{color:listSelected ==="rev"?"black":"#9c9b9b"}} onClick={()=> setListSelected("rev")}>
                             Reviews ({selectedProduct?.reviews.length})
                         </li>
             </ul>

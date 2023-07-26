@@ -41,7 +41,7 @@ export default function Navbar() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" href="/exclusive">
+                <a className="nav-link active" href="#box">
                   Exclusive
                 </a>
               </li>

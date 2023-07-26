@@ -24,3 +24,24 @@ code {
    
   margin: 20px auto 30px !important;
 }
+.product-page img {
+  height: 100%;
+  object-fit: contain;
+  width: 100%;}
+
+  .product-reviews li {
+    cursor: pointer;
+    font-weight: 500;
+  }
+  .product-reviews ul {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+    padding: 0;
+  }
+  section {
+    padding-bottom: 60px!important;
+    padding-top: 60px!important;
+}    
+  
