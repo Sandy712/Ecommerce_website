@@ -1,8 +1,8 @@
 import { Row } from "react-bootstrap";
 import { useEffect } from "react";
-import Product from "./Product/Product";
+import Product from "./Product";
 
-const ShopList = ({productItems,addtoCart}) => {
+const Shoplist = ({productItems,addtoCart}) => {
     useEffect(()=> {
     },[productItems])
     if(productItems.length ===0) {
@@ -22,4 +22,4 @@ const ShopList = ({productItems,addtoCart}) => {
         );
     }
 }
-export default ShopList;
+export default Shoplist;

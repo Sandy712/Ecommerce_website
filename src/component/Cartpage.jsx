@@ -10,7 +10,7 @@ import { faClose } from "@fortawesome/free-solid-svg-icons";
 
 export default function Cartpage() {
     const { CartItem, setCartItem, addtoCart, decreaseQty, deleteProduct} =useContext(DataContainer);
-    const TotalPrice= CartItem.reduce((price,item)=> price + item.qty * item.price ,0);
+    const TotalPrice= CartItem.reduce((price,item)=> { return price + item.qty * item.price },0);
 
     useEffect(()=>{
         window.scrollTo(0,0);

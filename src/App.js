@@ -6,15 +6,9 @@ import Navbar from './component/Navbar';
 import Home from "./component/Home";
 import Footer from "./component/Footer";
 import Cartpage from "./component/Cartpage";
-import  './component/style/style.scss';
-
-import Main from "./component/shop/Main";
-import Men from "./component/shop/Men";
-import Women from "./component/shop/Women";
-import Children from "./component/shop/Children";
-
-
-
+// import  './component/style/style.scss';
+import Shoppage from "./component/Shoppage";
+import ProductsDetail from "./component/ProductsDetail";
 
 export const DataContainer = createContext();
 
@@ -68,11 +62,13 @@ function App() {
         <Navbar/>
         <Routes>
           <Route exact path="/" element={<Home/>}/>
-          <Route path="/cart" element={<Cartpage/>}/>
-          <Route exact path="/shop" element={<Main/>}></Route>
+          <Route exact path="/shop" element={<Shoppage/>}/>
+          <Route exact path="/shop/:id" element={<ProductsDetail/>}/>
+          <Route exact path="/cart" element={<Cartpage/>}/>
+          {/* <Route exact path="/shop" element={<Main/>}></Route>
           <Route exact path="/men" element={<Men/>}></Route>
           <Route exact path="/women" element={<Women/>}></Route>
-          <Route exact path="/children" element={<Children/>}></Route>
+          <Route exact path="/children" element={<Children/>}></Route> */}
 
 
         </Routes>

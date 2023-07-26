@@ -5,7 +5,8 @@ import { products } from "../utlis/product";
 import { useParams } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
-import ShopList from "./Shoplist";
+import Shoplist from "./Shoplist";
+
 
 export default function ProductsDetail() {
   const [listSelected,setListSelected] =useState("desc");
@@ -31,13 +32,13 @@ export default function ProductsDetail() {
   return (
     <Fragment>
         <section className="product-page">
-            <title title={selectedProduct?.productName}></title>
+            <title title= {selectedProduct?.productName}></title>
             <Container>
               <Row className="justify-content-center">
-                <Col md={7}>
+                <Col md={5}>
                   <img src={selectedProduct?.imgUrl} alt="/" />
                 </Col>
-                <col md={5}>
+                <Col md={7}>
                   <h2> title={selectedProduct?.productName}</h2>
                   <div className="rate">
                 <FontAwesomeIcon icon={faStar} style={{color: "#fbdf50",}}/>
@@ -53,7 +54,7 @@ export default function ProductsDetail() {
                 <p className="short-desc">${selectedProduct?.shortDesc}</p>
                 <input className="qty-input" type="integer" placeholder="qty" value={quantity} onChange={handleQuantityChange}/>
                 <button className="product-add" onClick={()=>addtoCart(selectedProduct,quantity)}>Add to Cart</button>
-                </col>
+                </Col>
               </Row>
             </Container>
         </section>
@@ -87,7 +88,7 @@ export default function ProductsDetail() {
           <Container>
             <h2>You might also like</h2>
           </Container>
-          <ShopList productItems={relatedProducts} addtoCart={addtoCart}></ShopList>
+          <Shoplist productItems={relatedProducts} addtoCart={addtoCart}></Shoplist>
         </section>
     </Fragment>
     
