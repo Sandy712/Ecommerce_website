@@ -24,7 +24,7 @@ export default function ProductsDetail() {
     const addtocart =()=>{
       const count = parseInt(localStorage.getItem('quantity')) || 0;
     const updatedCount = count + 1;
-    // localStorage.setItem('quantity', updatedCount);
+    localStorage.setItem('quantity', updatedCount);
     setquantity(updatedCount);
     };
 
