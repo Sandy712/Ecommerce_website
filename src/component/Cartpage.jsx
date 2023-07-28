@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { faMinus } from "@fortawesome/free-solid-svg-icons";
 import { faClose } from "@fortawesome/free-solid-svg-icons";
+import './style/style.scss'
 
 
 
@@ -32,7 +33,7 @@ export default function Cartpage() {
                             <div className="Cart-list" key={item.id}>
                                 <Row>
                                     <Col className="image-holder" sm={4} md={3}>
-                                        <img src={item.imgUrl} alt="/"/>
+                                        <img className="cartimg" src={item.imgUrl} alt="/"/>
                                     </Col>
                                     <Col sm={8} md={9}>
                                         <Row className="cart-qty justify-content-center">
