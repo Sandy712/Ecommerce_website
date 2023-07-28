@@ -13,7 +13,10 @@ export default function Exclusivefor({productName,shortDesc,imgUrl}) {
         <Col md={5}>
           <h1 className="mx-4">{productName}</h1>
           <p className="mx-4">{shortDesc}</p>
+          <a href="/shop">
           <button className="btn btn-primary mx-4">Shop now</button>
+          </a>
+
         </Col>
       </Row>
     </Container>

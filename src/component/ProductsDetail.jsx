@@ -58,7 +58,12 @@ export default function ProductsDetail() {
                 <span className="price">${selectedProduct?.price}</span>
               </div>
               <p className="short-desc">${selectedProduct?.shortDesc}</p>
-              <input className="qty-input" type="integer" placeholder="" value={quantity} onChange={handleQuantityChange}/>
+              <input
+                className="qty-input" type="integer" placeholder="" value={quantity}  onChange={handleQuantityChange}
+              />
+              
+              
+                
               <button className="product-add" type="submit" onClick={()=>handelAdd(selectedProduct,quantity)}>Add to Cart</button>
             </Col>
           </Row>
