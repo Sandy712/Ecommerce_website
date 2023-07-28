@@ -6,9 +6,11 @@ import Navbar from './component/Navbar';
 import Home from "./component/Home";
 import Footer from "./component/Footer";
 import Cartpage from "./component/Cartpage";
-// import  './component/style/style.scss';
+import  './component/style/style.scss';
 import Shoppage from "./component/Shoppage";
 import ProductsDetail from "./component/ProductsDetail";
+import Login from "./component/Login";
+
 
 export const DataContainer = createContext();
 
@@ -65,6 +67,7 @@ function App() {
           <Route exact path="/shop" element={<Shoppage/>}/>
           <Route exact path="/shop/:id" element={<ProductsDetail/>}/>
           <Route exact path="/cart" element={<Cartpage/>}/>
+          <Route exact path="/login" element={<Login/>}/>
           
 
 

@@ -49,5 +49,5 @@ export default function FilterSelect({setFilterList}) {
         styles={customStyles}
         onChange={handleChange}
         />
-  )
-}
+  );
+};

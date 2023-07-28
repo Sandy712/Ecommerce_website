@@ -9,45 +9,45 @@ import { faClose } from "@fortawesome/free-solid-svg-icons";
 
 
 export default function Cartpage() {
-    const { CartItem, setCartItem, addtoCart, decreaseQty, deleteProduct} =useContext(DataContainer);
-    const TotalPrice= CartItem.reduce((price,item)=> { return price + item.qty * item.price },0);
+    const { CartItems, setCartItems, addtoCart, decreaseitem, deleteProduct} =useContext(DataContainer);
+    const TotalPrice= CartItems.reduce((price,item)=> price + item.qty * item.price ,0);
 
-    useEffect(()=>{
+    useEffect(()=> {
         window.scrollTo(0,0);
-        if(CartItem.length===0){
-            const sortedcart=localStorage.getItem("cartItem");
-            setCartItem(JSON.parse(sortedcart));
+        if(CartItems.length ===0) {
+          const storedCart = localStorage.getItem("cartItem");
+          setCartItems(JSON.parse(storedCart));
         }
-    },[])
+      },[]);
 
   return (
     <section className="cart-item">
         <Container>
             <Row className="justify-content-center">
-                <Col md={9}>
-                    {CartItem.length===0 && <h1 className="no-items product">No Items in Cart</h1>}
-                    {CartItem.map((item) =>{
-                        const productqty=item.price*item.qty;
+                <Col md={8}>
+                    {CartItems.length===0 && <h1 className="no-items product">No Items in Cart</h1>}
+                    {CartItems.map((item) =>{
+                        const productqty=item.price * item.qty
                         return (
                             <div className="Cart-list" key={item.id}>
                                 <Row>
                                     <Col className="image-holder" sm={4} md={3}>
-                                        <img src={item.imageUrl} alt="/"/>
+                                        <img src={item.imgUrl} alt="/"/>
                                     </Col>
                                     <Col sm={8} md={9}>
                                         <Row className="cart-qty justify-content-center">
                                             <Col xs={12} sm={9} className="cart-details">
                                                 <h3>{item.productName}</h3>
                                                 <h4>
-                                                    Rs.{item.price}.00*{item.qty}
-                                                    <span>${productqty}.00</span>
+                                                    Rs.{item.price}.00 * {item.qty}
                                                 </h4>
+                                                    <span>{productqty}.00</span>
                                             </Col>
                                             <Col xs={12} sm={3} className="cart-control">
                                                 <button className="add" onClick={()=>addtoCart(item)}>
                                                 <FontAwesomeIcon icon={faPlus}/>
                                                 </button>
-                                                <button className="mius" onClick={()=>decreaseQty(item)}>
+                                                <button className="mius" onClick={()=>decreaseitem(item)}>
                                                     <FontAwesomeIcon icon={faMinus}/>
                                                 </button>
                                             </Col>
@@ -61,7 +61,7 @@ export default function Cartpage() {
                         )})
                     }
                 </Col>
-                <Col md={3}>
+                <Col md={4}>
                     <div className="total">
                         <h2>Cart Summary</h2>
                         <div className="d-flex">

@@ -1,18 +1,32 @@
-import React from "react";
+import React,{useContext, useEffect} from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { DataContainer } from "../App";
+import { Link } from "react-router-dom";
+
  
 
 export default function Navbar() {
+  const {CartItems,setCartItems}=useContext(DataContainer);
+
+  useEffect(()=> {
+    if(CartItems.length ===0) {
+      const storedCart = localStorage.getItem("cartItem");
+      setCartItems(JSON.parse(storedCart));
+    }
+  },[])
+
+
+
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid"  >
-          <a className="navbar-brand" style={{ marginLeft:10}} href="/">
+          <Link className="navbar-brand" style={{ marginLeft:10}} to="/">
             shopsyha
-          </a>
+          </Link>
 
           <form className="d-flex " role="search"  >
             <input
@@ -31,48 +45,48 @@ export default function Navbar() {
             
             >
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/">
+                <Link className="nav-link active" aria-current="page" to="/">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" href="/shop">
+                <Link className="nav-link active" to="/shop">
                   Shop
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" href="#box">
+                <Link className="nav-link active" to="#box">
                   Exclusive
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link " href="/cart">
+                <Link className="nav-link " to="/cart" data-num={CartItems.length}>
                   <FontAwesomeIcon icon={faShoppingCart} />
-                </a>
+                </Link>
               </li>
               <li className="nav-item dropdown">
-                <a
+                <Link
                   className="nav-link active dropdown-toggle lg"
-                  href="/"
+                  to="/"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   <FontAwesomeIcon icon={faUser} size="lg" />
-                </a>
+                </Link>
                 <ul className="dropdown-menu" style={{ left: "-70px" }}>
                   <li>
-                    <a className="dropdown-item" href="/">
-                      Sing-in/Sign-up
-                    </a>
+                    <Link className="dropdown-item" to="/login">
+                      Sing-in
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="/">
+                    <Link className="dropdown-item" to="/">
                       Details
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="/">Something</a>
+                    <Link className="dropdown-item" to="/">Something</Link>
                   </li>
                 </ul>
               </li>
