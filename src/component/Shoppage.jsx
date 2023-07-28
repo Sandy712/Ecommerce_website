@@ -8,7 +8,7 @@ import FilterSelect from './FilterSelect';
 
 export default function Shoppage() {
     const {addtoCart}=useContext(DataContainer);
-    const [filterList,setFilterList] = useState(products.filter(item => item.category ==="mobile"));
+    const [filterList,setFilterList] = useState(products.filter(item => item.category ==="watch"  ||item.category ==="wireless"||item.category ==="mobile"||item.category ==="sofa"||item.category ==="chair"));
 
 
     useEffect(()=>{

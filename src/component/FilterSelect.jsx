@@ -1,5 +1,7 @@
 import { products } from '../utlis/product';
 import Select from 'react-select';
+import "bootstrap/dist/css/bootstrap.css";
+
 
 
 const options=[
@@ -10,43 +12,25 @@ const options=[
     { value: "wireless", label: "Wireless" },
 ]
 
-const customStyles = {
-    control: (provided) => ({
-        ...provided,
-        backgroundColor: "#0f3460",
-        color: "white",
-        borderRadius: "5px",
-        border: "none",
-        boxShadow: "none",
-        width: "200px",
-        height: "40px",
-    }),
-    option: (provided, state) => ({
-        ...provided,
-        backgroundColor: state.isSelected ? "#0f3460" : "white",
-        color: state.isSelected ? "white" : "#0f3460",
-        "&:hover": {
-        backgroundColor: "#0f3460",
-        color: "white",
-        },
-    }),
-    singleValue: (provided) => ({
-        ...provided,
-        color: "white",
-    }),
-};
 
 
 export default function FilterSelect({setFilterList}) {
     const handleChange=(selectedOption)=>{
-        setFilterList(products.filter(item=>item.category===selectedOption.value))
+        if (selectedOption.length === 0) {
+            // If no options are selected, reset the filter list to show all products
+            setFilterList(products);
+        } else {
+            // Filter the products based on the selected options
+            const selectedCategories = selectedOption.map((option) => option.value);
+            setFilterList(products.filter((item) => selectedCategories.includes(item.category)));
+        }
     }
   
     return (
         <Select
+        isMulti
         options={options}
         defaultValue={{value:"",label:"Filter by category"}}
-        styles={customStyles}
         onChange={handleChange}
         />
   );

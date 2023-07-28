@@ -20,7 +20,7 @@ export default function ProductsDetail() {
     setSelectedProduct(JSON.parse(storedproduct));
   }
 
-  const [quantity, setquantity] = useState(1);
+  const [quantity, setquantity] = useState();
   const handleQuantityChange = (event) => {
     setquantity(parseInt(event.target.value));
   };
