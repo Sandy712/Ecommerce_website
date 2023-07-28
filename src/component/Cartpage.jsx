@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { faMinus } from "@fortawesome/free-solid-svg-icons";
 import { faClose } from "@fortawesome/free-solid-svg-icons";
-import './style/style.scss'
+import './style/style.scss';
 
 
 
@@ -45,14 +45,14 @@ export default function Cartpage() {
                                                     <span>{productqty}.00</span>
                                             </Col>
                                             <Col xs={12} sm={3} className="cart-control">
-                                                <button className="add" onClick={()=>addtoCart(item)}>
-                                                <FontAwesomeIcon icon={faPlus}/>
+                                                <button className="add plus" onClick={()=>addtoCart(item)} style={{ background:'transparent'}}>
+                                                <FontAwesomeIcon icon={faPlus} />
                                                 </button>
-                                                <button className="mius" onClick={()=>decreaseitem(item)}>
-                                                    <FontAwesomeIcon icon={faMinus}/>
+                                                <button className="mius less" onClick={()=>decreaseitem(item)} style={{background:'transparent'}}>
+                                                    <FontAwesomeIcon icon={faMinus} size="xl"/>
                                                 </button>
                                             </Col>
-                                            <button className="delete" onClick={()=>deleteProduct(item)}>
+                                            <button className="delete" onClick={()=>deleteProduct(item)} style={{width:100 , border:'none'}}>
                                                 <FontAwesomeIcon icon={faClose}/>
                                             </button>
                                         </Row>
@@ -64,10 +64,10 @@ export default function Cartpage() {
                 </Col>
                 <Col md={4}>
                     <div className="total">
-                        <h2>Cart Summary</h2>
-                        <div className="d-flex">
-                            <h4>Total Price:</h4>
-                            <h4>Rs.{TotalPrice}.00</h4>
+                        <h4 className="txt">Cart Summary</h4>
+                        <div className="d-flex price txt">
+                            <h4>Total Price: </h4>
+                            <h4> Rs. {TotalPrice}.00</h4>
                         </div>
                     </div>
                 </Col>

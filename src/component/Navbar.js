@@ -74,7 +74,7 @@ export default function Navbar() {
                 >
                   <FontAwesomeIcon icon={faUser} size="lg" />
                 </Link>
-                <ul className="dropdown-menu" style={{ left: "-70px" }}>
+                <ul className="dropdown-menu" style={{ left: "-100px" }}>
                   <li>
                     <Link className="dropdown-item" to="/login">
                       Sing-in
@@ -86,7 +86,7 @@ export default function Navbar() {
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/">Something</Link>
+                    <Link className="dropdown-item" to="/">..</Link>
                   </li>
                 </ul>
               </li>
