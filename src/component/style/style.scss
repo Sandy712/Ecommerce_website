@@ -17,10 +17,12 @@
     // pndosition: fixed;
     // z-iex: 1;
 }
-* {
+body {
     // box-sizing: border-box;
     margin: 0;
     padding: 0;
+    // height: 100%;
+    // width: 100%;
 }
 .button{
     background: transparent;
@@ -159,5 +161,8 @@
 }
 .txt{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.dropdowm-item{
+    width: 68%;
 }
     

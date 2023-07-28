@@ -5,6 +5,7 @@ import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { DataContainer } from "../App";
 import { Link } from "react-router-dom";
+import './style/style.scss';
 
  
 
@@ -16,7 +17,7 @@ export default function Navbar() {
       const storedCart = localStorage.getItem("cartItem");
       setCartItems(JSON.parse(storedCart));
     }
-  },[])
+  },)
 
 
 
@@ -60,36 +61,21 @@ export default function Navbar() {
                 </Link>
               </li>
               <li className="nav-item">
+                <Link className="nav-link active" to="#box">
+                  About us
+                </Link>
+              </li>
+              <li className="nav-item">
                 <Link className="nav-link " to="/cart" data-num={CartItems.length}>
                   <FontAwesomeIcon icon={faShoppingCart} />
                 </Link>
               </li>
-              <li className="nav-item dropdown">
-                <Link
-                  className="nav-link active dropdown-toggle lg"
-                  to="/"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <FontAwesomeIcon icon={faUser} size="lg" />
+              <li className="nav-item">
+                <Link className="nav-link active" to="#box">
+                <FontAwesomeIcon icon={faUser} size="lg" />
                 </Link>
-                <ul className="dropdown-menu" style={{ left: "-100px" }}>
-                  <li>
-                    <Link className="dropdown-item" to="/login">
-                      Sing-in
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="dropdown-item" to="/">
-                      Details
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="dropdown-item" to="/">..</Link>
-                  </li>
-                </ul>
               </li>
+              
             </ul>
           </div>
           <button
