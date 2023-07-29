@@ -1,50 +1,132 @@
-import React from 'react'
-import { Col, Container, Row } from "react-bootstrap"
-import "./Footer.css"
+ import React from 'react';
+import {
+  MDBFooter,
+  MDBContainer,
+  // MDBIcon,
+  
+  MDBCol,
+  MDBRow, 
+  
+} from 'mdb-react-ui-kit';
+import {RiInstagramFill} from 'react-icons/ri' 
+import {RiTwitterFill} from 'react-icons/ri' 
+import {RiGithubFill} from 'react-icons/ri' 
+import {RiLinkedinBoxFill} from 'react-icons/ri' 
+import {RiStackFill} from 'react-icons/ri' 
+import './style/style.scss';
+
+
+ 
+
 
 export default function Footer() {
   return (
-    <footer>
-        <Container>
-          <Row className="footer-row">
-            <Col md={3} sm={5} className='box'>
-              <div className="logo">
-                  <ion-icon name="bag"></ion-icon>
-                  <h1>Shospy</h1>
-              </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor libero id et, in gravida. Sit diam duis mauris nulla cursus. Erat et lectus vel ut sollicitudin elit at amet.</p>
-            </Col>
-            <Col md={3} sm={5} className='box'>
-              <h2>About Us</h2>
-              <ul>
-                <li>Careers</li>
-                <li>Our Stores</li>
-                <li>Our Cares</li>
-                <li>Terms & Conditions</li>
-                <li>Privacy Policy</li>
-              </ul>
-            </Col>
-            <Col md={3} sm={5} className='box'>
-              <h2>Customer Care</h2>
-              <ul>
-                <li>Help Center </li>
-                <li>How to Buy </li>
-                <li>Track Your Order </li>
-                <li>Corporate & Bulk Purchasing </li>
-                <li>Returns & Refunds </li>
-              </ul>
-            </Col>
-            <Col md={3} sm={5} className='box'>
-              <h2>Contact Us</h2>
-              <ul>
-                <li>Indore,India</li>
-                <li>Email: muskanno.999@gmail.com</li>
-                <li>Phone: +91 9174595317</li>
-                <li>Phone: +91 7898287715</li>
-              </ul>
-            </Col>
-          </Row>
-        </Container>
-    </footer>
-  )
+    <MDBFooter className='text-center' color='white' bgColor='dark'>
+      <MDBContainer className='p-4'>
+        {/* <section className='mb-4'>
+         
+          
+        </section> */}
+        <section className=''>
+        <MDBContainer className='text-center text-md-start mt-5'>
+          <MDBRow className='mt-3'>
+            <MDBCol md="3" lg="4" xl="3" className='mx-auto mb-4'>
+              <h6 className='text-uppercase fw-bold mb-4'>
+                
+              <RiStackFill/>  Welcome to Treasurease: Unveil the World of Wonders!
+              </h6>
+              <p>
+ 
+              At Treasurease, we invite you on an enchanting journey of exploration, discovery, and sheer delight. Step into a realm where imagination knows no bounds, where hidden gems and untold wonders await around every corner. 
+              </p>
+            </MDBCol>
+
+            <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4'>
+              <h6 className='text-uppercase fw-bold '>Products</h6>
+              <p>
+                <a href='#!' className='text-reset'>
+                  Artifacts
+                </a>
+              </p>
+              <p>
+                <a href='#!' className='text-reset'>
+                  Accessories
+                </a>
+              </p>
+              <p>
+                <a href='#!' className='text-reset'>
+                  Brands
+                </a>
+              </p>
+              <p>
+                <a href='#!' className='text-reset'>
+                  Grocery
+                </a>
+              </p>
+            </MDBCol>
+
+            <MDBCol md="3" lg="2" xl="2" className='mx-auto mb-4'>
+              <h6 className='text-uppercase fw-bold mb-4'>Social links</h6>
+              <p>
+                <a href='https://www.instagram.com/udaysolankii03/' className='text-reset'>
+                 <RiInstagramFill/> Instagram
+                </a>
+              </p>
+              <p>
+                <a href='#!' className='text-reset'>
+                  <RiTwitterFill/> Twitter
+                </a>
+              </p>
+              <p>
+                <a href='#!' className='text-reset'>
+                  <RiGithubFill/> Github
+                </a>
+              </p>
+              <p>
+                <a href='#!' className='text-reset'>
+                  <RiLinkedinBoxFill/> Linkdin
+                </a>
+              </p>
+            </MDBCol>
+
+            <MDBCol md="4" lg="3" xl="3" className='mx-auto mb-md-0 mb-4'>
+              <h6 className='text-uppercase fw-bold mb-4'>Contact</h6>
+              <p>
+                 
+               Inodre , 452011 , India
+              </p>
+              <p>
+                 
+              TreasurEaseBuy@gmail.com
+              </p>
+              <p>
+                  +91 9174595317
+              </p>
+              <p>
+                  +91 78982 87715
+              </p>
+            </MDBCol>
+          </MDBRow>
+        </MDBContainer>
+      
+          <p>
+           <p>TreasurEase: Revolutionizing online shopping  Delivery
+            </p>  
+            At Treasurease, we believe that every dream has the potential to become a reality. Step into a world of boundless possibilities, where shopping transforms into a delightful adventure filled with endless choices, exclusive collections, and unparalleled convenience.  
+          </p>
+
+            
+        </section>
+
+         
+      </MDBContainer>
+
+      <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
+        © 2023 Copyright:
+        <a className='text-white' href='#'>
+        TreasurEase.com
+        </a>
+      </div>
+    </MDBFooter>
+  );
 }
