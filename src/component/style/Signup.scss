@@ -1,0 +1,56 @@
+// Signup.scss
+
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; // Optional: If you want to center the form vertically on the page.
+  
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+  
+    .input-group {
+      display: flex;
+      flex-direction: column;
+      align-items: center; // Center all input groups horizontally.
+  
+      .input-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center; // Center label and input horizontally.
+        margin-bottom: 20px;
+  
+        label {
+          font-size: 16px;
+          margin-bottom: 5px;
+        }
+  
+        input {
+          padding: 10px;
+          font-size: 16px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          width: 300px; // Optional: Adjust the width according to your preference.
+        }
+      }
+    }
+  
+    .signup-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
+  
