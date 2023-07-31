@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { faMinus } from "@fortawesome/free-solid-svg-icons";
 import { faClose } from "@fortawesome/free-solid-svg-icons";
+import { faCreditCard } from "@fortawesome/free-solid-svg-icons";
 import './style/style.scss';
 
 
@@ -69,6 +70,7 @@ export default function Cartpage() {
                             <h4>Total Price: </h4>
                             <h4> Rs. {TotalPrice}.00</h4>
                         </div>
+                        <button className="btn btn-success" > Buy Now  <FontAwesomeIcon icon={faCreditCard} /></button>
                     </div>
                 </Col>
             </Row>

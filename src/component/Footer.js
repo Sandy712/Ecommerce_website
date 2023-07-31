@@ -27,7 +27,7 @@ export default function Footer() {
          
           
         </section> */}
-        <section className=''>
+        <section className='foot'>
         <MDBContainer className='text-center text-md-start mt-5'>
           <MDBRow className='mt-3'>
             <MDBCol md="3" lg="4" xl="3" className='mx-auto mb-4'>

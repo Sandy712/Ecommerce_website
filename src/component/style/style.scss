@@ -145,7 +145,7 @@ body {
     // height: 150px;
     // display: flex;
     border-radius: 8px;
-    height: 130px;
+    height: 146px;
     box-shadow: 5px 10px 10px gray;
 }
 .price{
@@ -171,5 +171,14 @@ body {
 .logo{
     height: 43px;
     width: 157px;
+}
+.foot{
+    // width: 500px;
+    height: 430px;
+    
+}
+.btn-success:hover{
+    background-color: transparent !important;
+    color: #000 !important;
 }
    

@@ -1,7 +1,7 @@
 import React, { useState,useContext } from 'react';
 import { DataContainer } from '../App';
 import "./style/Signup.scss"
-
+import { Link } from "react-router-dom";
 
 
 const Signup = () => {
@@ -30,6 +30,8 @@ const Signup = () => {
   };
 
   return (
+    <div className="main">
+
     <div className="signup-container">
       <h1>Sign Up</h1>
       <div className="input-group">
@@ -39,6 +41,9 @@ const Signup = () => {
           name="email"
           value={email}
           onChange={handleInputChange}
+          required
+          placeholder='Enter Your Email'
+          className='inp'
         />
       </div>
       <div className="input-group">
@@ -48,11 +53,15 @@ const Signup = () => {
           name="password"
           value={password}
           onChange={handleInputChange}
+          required
+          placeholder='Enter Your Password'
+          className='inp'
         />
       </div>
-      <button className="signup-button" onClick={handleSignup}>
+      <Link><button className="signup-button" onClick={handleSignup}>
         Sign Up
-      </button>
+      </button></Link> 
+    </div>
     </div>
   );
 };
