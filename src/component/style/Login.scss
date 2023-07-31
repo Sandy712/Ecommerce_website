@@ -1,7 +1,14 @@
 // Login.scss
+.op{
+  display: flex;
+  background-color: aquamarine;
+  justify-content: center;
+  align-items: center;
+}
 
 .login-container {
     display: flex;
+    background-color: #007bff;
     flex-direction: column;
     align-items: center;
     margin-top: 100px;

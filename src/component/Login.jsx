@@ -39,6 +39,7 @@ const Login = () => {
   };
 
   return (
+    <div className="op">
     <div className="login-container">
       <h1>Login</h1>
       {error && <p className="error">{error}</p>}
@@ -56,6 +57,7 @@ const Login = () => {
         </button>
       </form>
       <p className='mt-3'>Don't Have An Account Yet<span><NavLink to="/Signup">SignIn</NavLink></span> </p>
+    </div>
     </div>
   );
 };
