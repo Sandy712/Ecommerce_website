@@ -33,7 +33,7 @@ export default function Cartpage() {
                         return (
                             <div className="Cart-list" key={item.id}>
                                 <Row>
-                                    <Col className="image-holder" sm={4} md={3}>
+                                    <Col className="image-holder" sm={3} md={1}>
                                         <img className="cartimg" src={item.imgUrl} alt="/"/>
                                     </Col>
                                     <Col sm={8} md={9}>
@@ -68,7 +68,7 @@ export default function Cartpage() {
                         <h4 className="txt">Cart Summary</h4>
                         <div className="d-flex price txt">
                             <h4>Total Price: </h4>
-                            <h4> Rs. {TotalPrice}.00</h4>
+                            <h4>Rs.{TotalPrice}.00</h4>
                         </div>
                         <button className="btn btn-success" > Buy Now  <FontAwesomeIcon icon={faCreditCard} /></button>
                     </div>

@@ -10,7 +10,7 @@ import { Container, Row } from 'react-bootstrap'
 
 export default function Home() {
   const { addtoCart } = useContext(DataContainer);
-  const TopProducts = products.filter(item => (item.avgRating > 4.5) && (item.category === "mobile" || item.category === "chair" || item.category === "wireless"));
+  const TopProducts = products.filter(item => (item.avgRating > 3.5) && (item.category === "mobile" || item.category === "watch"));
   // const discountpro=discoutProducts.filter(item=>(item.discount>=10));
   useEffect(() => {
     window.scrollTo(0, 0);

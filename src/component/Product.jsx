@@ -34,7 +34,7 @@ const Product = ({ title, productItem, addtoCart }) => {
     }
 
     return (
-        <Col md={2} sm={5} xs={10} className="product mtop">
+        <Col md={2} sm={4} xs={8} className="product mtop">
             <img loading="lazy" onClick={() => handleClick()} src={productItem.imgUrl} alt="" />
             <div className="product-addtoCart">
                 <label>{count}</label> <br/>
