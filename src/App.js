@@ -95,7 +95,8 @@ function App() {
       <Router>
         <Navbar/>
         <Routes>
-          <Route exact path="/" element={loggedIn ? <Home /> : <Navigate to="/login" />} />
+          <Route exact path="/" element={<Home/>} />
+          {/* <Route exact path="/signin" element={<Login/>} /> */}
           <Route exact path="/shop" element={loggedIn ? <Shoppage /> : <Navigate to="/login" />} />
           <Route exact path="/shop/:id" element={<ProductsDetail />} />
           <Route exact path="/cart" element={loggedIn ? <Cartpage /> : <Navigate to="/login" />} />
@@ -104,7 +105,7 @@ function App() {
           <Route exact path="/Exclusive" element={loggedIn ? <Exclusive /> : <Navigate to="/login" />} />
         </Routes>
         <Footer />
-      </Router>
+       </Router>
     </DataContainer.Provider>
   );
 }
