@@ -85,7 +85,7 @@ function App() {
     left: 'unset', // default: 'unset'
     time: '0.3s', // default: '0.3s'
     mixColor: 'linear-gradient(to top, #fbc2eb 0%, #a6c1ee 50%)', // default: '#fff'
-    backgroundColor: 'linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%)',  // default: '#fff'
+    backgroundColor: '#fff',  // default: '#fff'
     buttonColorDark: '#100f2c',  // default: '#100f2c'
     buttonColorLight: '#fff', // default: '#fff'
     saveInCookies: false, // default: true,
