@@ -44,22 +44,22 @@ export default function Footer() {
             <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold '>Products</h6>
               <p>
-                <a href='#!' className='text-reset'>
+                <a href='!' className='text-reset'>
                   Artifacts
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
+                <a href='!' className='text-reset'>
                   Accessories
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
+                <a href='!' className='text-reset'>
                   Brands
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
+                <a href='!' className='text-reset'>
                   Grocery
                 </a>
               </p>
@@ -73,17 +73,17 @@ export default function Footer() {
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
+                <a href='!' className='text-reset'>
                   <RiTwitterFill/> Twitter
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
+                <a href='!' className='text-reset'>
                   <RiGithubFill/> Github
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
+                <a href='!' className='text-reset'>
                   <RiLinkedinBoxFill/> Linkdin
                 </a>
               </p>
@@ -126,7 +126,7 @@ export default function Footer() {
 
       <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
         © 2023 Copyright:
-        <a className='text-white' href='#'>
+        <a className='text-white' href='!'>
         TreasurEase.com
         </a>
       </div>

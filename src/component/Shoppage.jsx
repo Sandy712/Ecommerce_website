@@ -20,7 +20,7 @@ export default function Shoppage() {
             <section className='shop-page'>
                 <Container className='shop-page'>
                     <Row className='justify-content-center'>
-                        <Col md={12}>
+                        <Col md={12} style={{marginBottom:"10px"}}>
                             <FilterSelect setFilterList={setFilterList}/>
                         </Col>
                     </Row>

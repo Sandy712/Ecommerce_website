@@ -621,7 +621,7 @@ export const products = [
   },
   {
     id: "20",
-    productName: "T--Adaptive systematic synergy",
+    productName: "T-Systematic",
     imgUrl:wire7,
     category: "wireless",
     price: 8850,
