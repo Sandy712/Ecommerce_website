@@ -1,3 +1,4 @@
+import Darkmode from 'darkmode-js';
 import { useState, createContext, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Routes, Route,Navigate } from "react-router-dom";
@@ -75,6 +76,25 @@ function App() {
     const storedUsersData = JSON.parse(localStorage.getItem("users")) || [];
     setUsersData(storedUsersData);
   }, []);
+
+  new Darkmode().showWidget();
+
+  const options = {
+    bottom: '32px', // default: '32px'
+    right: '32px', // default: '32px'
+    left: 'unset', // default: 'unset'
+    time: '0.3s', // default: '0.3s'
+    mixColor: 'linear-gradient(to top, #fbc2eb 0%, #a6c1ee 50%)', // default: '#fff'
+    backgroundColor: 'linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%)',  // default: '#fff'
+    buttonColorDark: '#100f2c',  // default: '#100f2c'
+    buttonColorLight: '#fff', // default: '#fff'
+    saveInCookies: false, // default: true,
+    label: '🌓', // default: ''
+    autoMatchOsTheme: true // default: true
+  }
+  
+  const darkmode = new Darkmode(options);
+  darkmode.showWidget();
 
   return (
     <DataContainer.Provider
