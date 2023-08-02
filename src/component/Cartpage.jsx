@@ -66,9 +66,9 @@ export default function Cartpage() {
                 <Col md={4}>
                     <div className="total">
                         <h4 className="txt">Cart Summary</h4>
-                        <div className="d-flex price txt">
+                        <div className="d-flex txt">
                             <h4>Total Price: </h4>
-                            <h4>Rs.{TotalPrice}.00</h4>
+                            <h4>{TotalPrice}.00 Rs</h4>
                         </div>
                         <button className="btn btn-success" > Buy Now  <FontAwesomeIcon icon={faCreditCard} /></button>
                     </div>

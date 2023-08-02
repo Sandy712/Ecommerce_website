@@ -20,23 +20,23 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <nav className="navbar navbar-expand-lg bg-body-tertiary dont=pad-me">
         <div className="container-fluid">
           <Link className="navbar-brand" style={{ marginLeft: 10 }} to="/">
             <img className="logo" src={logo} alt="loading..." />
           </Link>
 
-          <form className="d-flex " role="search">
-            <input
-              className="form-control me-2"
+          <form className="d-flex mob-nav" role="search">
+            {/* <input
+              className="form-control m-2"
               type="search"
               placeholder="Search"
               aria-label="Search"
               style={{ borderRadius: 20 }}
-            />
-            <button className="button" type="submit">
+            /> */}
+            {/* <button className="button" type="submit">
               <FontAwesomeIcon icon={faMagnifyingGlass} size="lg" />
-            </button>
+            </button> */}
           </form>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0 mx-4">

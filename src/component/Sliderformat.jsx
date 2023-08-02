@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 export default function Sliderformat({title,desc,cover}) {
   return (
-    <Container className='box' >
+    <Container className='box' style={{}}>
         <Row>
           <Col md={6}>
             <h1 className='mx-4'>{title}</h1>

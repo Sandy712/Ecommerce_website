@@ -26,6 +26,7 @@ export default function ProductsDetail() {
   };
   const handelAdd = (selectedProduct, quantity) => {
     addtoCart(selectedProduct, quantity);
+    alert('Item Added In Cart')
     // toast.success("Product has been added to cart!");
   }
 
@@ -58,9 +59,7 @@ export default function ProductsDetail() {
                 <span className="price">${selectedProduct?.price}</span>
               </div>
               <p className="short-desc">${selectedProduct?.shortDesc}</p>
-              <input
-                className="qty-input" type="integer" placeholder="" value={quantity}  onChange={handleQuantityChange}
-              />
+               
               
               
                 

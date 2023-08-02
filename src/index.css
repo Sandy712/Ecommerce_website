@@ -43,6 +43,14 @@ code {
   section {
     padding-bottom: 60px!important;
     padding-top: 60px!important;
-}    
- 
+}   
+
+@media only screen and (max-width: 600px) {
+     
+}
+.cart-list{
+    margin-bottom: 30px;
+    padding: 20px;
+    position: relative;
+}
   
