@@ -109,7 +109,10 @@ export default function Footer() {
           </MDBRow>
         </MDBContainer>
       
-          <p>
+          <p style={{
+            textAlign:'left',
+            marginLeft:'3%'
+          }}>
            <p>TreasurEase: Revolutionizing online shopping  Delivery
             </p>  
             At Treasurease, we believe that every dream has the potential to become a reality. Step into a world of boundless possibilities, where shopping transforms into a delightful adventure filled with endless choices, exclusive collections, and unparalleled convenience.  

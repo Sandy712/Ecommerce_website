@@ -20,6 +20,7 @@ const Product = ({ title, productItem, addtoCart }) => {
     const [count, setCount] = useState(0);
     const increment = () => {
         setCount(count + 1);
+        alert('Item Added In Cart')
     }
 
     const handleClick = () => {

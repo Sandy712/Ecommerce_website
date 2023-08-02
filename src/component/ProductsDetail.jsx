@@ -21,9 +21,7 @@ export default function ProductsDetail() {
   }
 
   const [quantity, setquantity] = useState();
-  const handleQuantityChange = (event) => {
-    setquantity(parseInt(event.target.value));
-  };
+   
   const handelAdd = (selectedProduct, quantity) => {
     addtoCart(selectedProduct, quantity);
     alert('Item Added In Cart')
