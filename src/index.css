@@ -180,7 +180,7 @@ button {
   display: flex;
   align-items: center;
   margin: 20px 0;
-  gap: 40px;
+  gap: 0px;
 }
 
 .product-page .rate .stars i {

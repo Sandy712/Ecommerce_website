@@ -1,9 +1,13 @@
 // import Darkmode from 'darkmode-js';
 import { useState, createContext, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter as Router, Routes, Route,Navigate } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 import Navbar from "./component/Navbar";
-// import { products } from "./utlis/product";
 import Home from "./component/Home";
 import Footer from "./component/Footer";
 import Cartpage from "./component/Cartpage";
@@ -13,7 +17,8 @@ import ProductsDetail from "./component/ProductsDetail";
 import Login from "./component/Login";
 import Signup from "./component/Signup";
 import Exclusive from "./component/Exclusive";
-
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export const DataContainer = createContext();
 
@@ -22,7 +27,6 @@ function App() {
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [loggedIn, setLoggedIn] = useState(false);
   const [usersData, setUsersData] = useState([]);
-
 
   const addtoCart = (products, num = 1) => {
     const productExit = CartItems.find((item) => item.id === products.id); //check the product is present in cart or not
@@ -92,7 +96,7 @@ function App() {
   //   label: '🌓', // default: ''
   //   autoMatchOsTheme: true // default: true
   // }
-  
+
   // const darkmode = new Darkmode(options);
   // darkmode.showWidget();
 
@@ -109,23 +113,55 @@ function App() {
         loggedIn,
         setLoggedIn,
         usersData,
-        setUsersData
+        setUsersData,
       }}
     >
       <Router>
-        <Navbar/>
+        <ToastContainer
+          position="top-right"
+          autoClose={1000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="colored"
+        />
+        <Navbar />
         <Routes>
-          <Route exact path="/" element={<Home/>} />
+          <Route exact path="/" element={<Home />} />
           {/* <Route exact path="/signin" element={<Login/>} /> */}
-          <Route exact path="/shop" element={loggedIn ? <Shoppage /> : <Navigate to="/login" />} />
+          <Route
+            exact
+            path="/shop"
+            element={loggedIn ? <Shoppage /> : <Navigate to="/login" />}
+          />
           <Route exact path="/shop/:id" element={<ProductsDetail />} />
-          <Route exact path="/cart" element={loggedIn ? <Cartpage /> : <Navigate to="/login" />} />
-          <Route exact path="/Login" element={!loggedIn ? <Login /> : <Navigate to="/" />}/>
-          <Route exact path="/Signup" element={!loggedIn ? <Signup /> : <Navigate to="/" />} />
-          <Route exact path="/Exclusive" element={loggedIn ? <Exclusive /> : <Navigate to="/login" />} />
+          <Route
+            exact
+            path="/cart"
+            element={loggedIn ? <Cartpage /> : <Navigate to="/login" />}
+          />
+          <Route
+            exact
+            path="/Login"
+            element={!loggedIn ? <Login /> : <Navigate to="/" />}
+          />
+          <Route
+            exact
+            path="/Signup"
+            element={!loggedIn ? <Signup /> : <Navigate to="/" />}
+          />
+          <Route
+            exact
+            path="/Exclusive"
+            element={loggedIn ? <Exclusive /> : <Navigate to="/login" />}
+          />
         </Routes>
         <Footer />
-       </Router>
+      </Router>
     </DataContainer.Provider>
   );
 }

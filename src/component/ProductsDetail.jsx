@@ -7,6 +7,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import Shoplist from "./Shoplist";
 import "./style/style.scss";
+import { toast } from "react-toastify";
+
 
 
 export default function ProductsDetail() {
@@ -24,8 +26,7 @@ export default function ProductsDetail() {
    
   const handelAdd = (selectedProduct, quantity) => {
     addtoCart(selectedProduct, quantity);
-    alert('Item Added In Cart')
-    // toast.success("Product has been added to cart!");
+    toast.success("Product has been added to cart!");
   }
 
   useEffect(() => {
