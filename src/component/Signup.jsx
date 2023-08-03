@@ -35,7 +35,7 @@ const Signup = () => {
     <div className="signup-container">
       <h1>Sign Up</h1>
       <div className="input-group">
-        <label>Email:</label>
+        <label className='lab'>Email:</label>
         <input
           type="email"
           name="email"
@@ -47,7 +47,7 @@ const Signup = () => {
         />
       </div>
       <div className="input-group">
-        <label>Password:</label>
+        <label className='lab'>Password:</label>
         <input
           type="password"
           name="password"

@@ -73,26 +73,26 @@ import watchSlide from "../Images/watch-07.png";
 export const SliderData = [
   {
     id: 1,
-    title: "50% Off For Your First Shopping",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis lobortis consequat eu.",
+    title: "Home Centre Clary Nxt Beige Fabric",
+    desc: `Sink into luxury with our plush Godrej Interio sofas. Handcrafted for comfort and style, elevate your living space with the perfect centerpiece.`,
     cover: sofaSlide,
   },
   {
     id: 2,
-    title: "50% Off For Your First Shopping",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis lobortis consequat eu, quam etiam at quis ut convallis.",
-    cover: phone08,
+    title: "Wakefit Sofa Set",
+    desc: "Introducing our exquisite collection of handcrafted sofas. Elevate your living space with the perfect centerpiece of style and relaxation",
+    cover: productImg02,
   },
   {
     id: 3,
-    title: "50% Off For Your First Shopping",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis lobortis consequat eu, quam etiam at quis ut convallis.",
+    title: "boAt Rockerz 450 Bluetooth ",
+    desc: "Experience audio nirvana with our cutting-edge Bluetooth headphones. Immerse yourself in premium sound quality, wireless freedom, and unbeatable comfort",
     cover: wireless01,
   },
   {
     id: 4,
-    title: "50% Off For Your First Shopping",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis lobortis consequat eu, quam etiam at quis ut convallis.",
+    title: " BeatXP Marv Neo 1.85",
+    desc: "Embrace the future with our sleek and sophisticated smartwatches. Stay connected, monitor your health, and redefine your style with this cutting-edge wearable technology",
     cover: watchSlide,
   },
 ];
@@ -219,7 +219,7 @@ export const discoutProducts = [
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique ap iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
     reviews: [
       {
         rating: 4.8,
