@@ -1,4 +1,3 @@
-// import Darkmode from 'darkmode-js';
 import { useState, createContext, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {
@@ -8,15 +7,15 @@ import {
   Navigate,
 } from "react-router-dom";
 import Navbar from "./component/Navbar";
-import Home from "./component/Home";
+import Home from "./component/Pages/Home";
 import Footer from "./component/Footer";
-import Cartpage from "./component/Cartpage";
+import Cartpage from "./component/Pages/Cartpage";
 import "./component/style/style.scss";
-import Shoppage from "./component/Shoppage";
-import ProductsDetail from "./component/ProductsDetail";
+import Shoppage from "./component/Pages/Shoppage";
+import ProductsDetail from "./component/Layout/ProductsDetail";
 import Login from "./component/Login";
 import Signup from "./component/Signup";
-import Exclusive from "./component/Exclusive";
+import Exclusive from "./component/Pages/Exclusive";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -81,24 +80,6 @@ function App() {
     setUsersData(storedUsersData);
   }, []);
 
-  // new Darkmode().showWidget();
-
-  // const options = {
-  //   bottom: '32px', // default: '32px'
-  //   right: '32px', // default: '32px'
-  //   left: 'unset', // default: 'unset'
-  //   time: '0.3s', // default: '0.3s'
-  //   mixColor: 'linear-gradient(to top, #fbc2eb 0%, #a6c1ee 50%)', // default: '#fff'
-  //   backgroundColor: '#fff',  // default: '#fff'
-  //   buttonColorDark: '#100f2c',  // default: '#100f2c'
-  //   buttonColorLight: '#fff', // default: '#fff'
-  //   saveInCookies: false, // default: true,
-  //   label: '🌓', // default: ''
-  //   autoMatchOsTheme: true // default: true
-  // }
-
-  // const darkmode = new Darkmode(options);
-  // darkmode.showWidget();
 
   return (
     <DataContainer.Provider

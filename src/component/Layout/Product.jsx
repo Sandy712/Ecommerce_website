@@ -6,7 +6,7 @@ import { Col } from "react-bootstrap";
 import "./Product.css"
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
-import { DataContainer } from "../App";
+import { DataContainer } from "../../App";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";

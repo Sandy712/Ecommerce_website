@@ -1,4 +1,4 @@
-import { products } from '../utlis/product';
+import { products } from '../Utils/product';
 import Select from 'react-select';
 import "bootstrap/dist/css/bootstrap.css";
 

@@ -1,12 +1,12 @@
 import { React, Fragment, useState, useEffect, useContext } from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import { DataContainer } from "../App";
-import { products } from "../utlis/product";
+import { DataContainer } from "../../App";
+import { products } from "../../Utils/product";
 import { useParams } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
-import Shoplist from "./Shoplist";
-import "./style/style.scss";
+import Shoplist from "../Pages/Shoplist";
+import "../style/style.scss";
 import { toast } from "react-toastify";
 
 

@@ -1,13 +1,12 @@
 import { useContext, useEffect } from "react"
-import { DataContainer } from "../App"
+import { DataContainer } from "../../App"
 import { Col, Container, Row } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { faMinus } from "@fortawesome/free-solid-svg-icons";
 import { faClose } from "@fortawesome/free-solid-svg-icons";
 import { faCreditCard } from "@fortawesome/free-solid-svg-icons";
-import './style/style.scss';
-
+import '../style/style.scss';
 
 
 export default function Cartpage() {

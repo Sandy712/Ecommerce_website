@@ -1,10 +1,10 @@
 import React from 'react'
 import { Fragment, useContext, useEffect } from "react"
-import { DataContainer } from "../App"
-import Mainslider from './Mainslider'
+import { DataContainer } from "../../App"
+import Mainslider from '../Mainslider'
 import Section from './Section'
 import Exclusive from './Exclusive'
-import { products } from '../utlis/product'
+import { products } from '../../Utils/product'
 import { Container, Row } from 'react-bootstrap'
 
 

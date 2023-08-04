@@ -4,7 +4,7 @@
 
 import React from 'react'
 import { Container, Row } from "react-bootstrap"
-import Product from './Product'
+import Product from '../Layout/Product'
 
 export default function Section({title,bgColor,productItems,addtoCart}) {
   return (

@@ -3,8 +3,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Container } from "react-bootstrap";
-import { SliderData } from "../utlis/product";
-import Sliderformat from "./Sliderformat";
+import { SliderData } from "../Utils/product";
+import Sliderformat from "./Layout/Sliderformat";
 
 export default function Mainslider() {
   const settings = {

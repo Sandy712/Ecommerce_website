@@ -1,9 +1,9 @@
 import React, { Fragment, useContext, useEffect,useState } from 'react'
 import {Col,Row,Container} from "react-bootstrap";
-import { DataContainer } from '../App';
+import { DataContainer } from '../../App';
 import Shoplist from './Shoplist';
-import { products } from '../utlis/product';
-import FilterSelect from './FilterSelect';
+import { products } from '../../Utils/product';
+import FilterSelect from '../FilterSelect';
 
 
 export default function Shoppage() {

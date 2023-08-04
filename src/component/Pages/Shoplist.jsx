@@ -1,6 +1,6 @@
 import { Row } from "react-bootstrap";
 import { useEffect } from "react";
-import Product from "./Product";
+import Product from "../Layout/Product";
 
 const Shoplist = ({productItems,addtoCart}) => {
     useEffect(()=> {

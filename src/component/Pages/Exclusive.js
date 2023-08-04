@@ -3,8 +3,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Container } from "react-bootstrap";
-import { discoutProducts } from "../utlis/product";
-import Exclusivefor from "./Exclusivefor";
+import { discoutProducts } from "../../Utils/product";
+import Exclusivefor from "../Layout/Exclusivefor";
 
 
 
