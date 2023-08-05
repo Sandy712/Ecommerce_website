@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# TreasurEase E-Commerce Website - ReactJS 🛒
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to our E-Commerce Website built using ReactJS! This project aims to provide a seamless and user-friendly online shopping experience. Below you'll find all the information you need to get started with the website, from features and technologies used to installation steps and more.
+<p align="center">
+<img width="180" height="81" alt="Treasuease Logo" src="https://github.com/Sandy712/Ecommerce_website/blob/master/Image/Screenshot%202023-08-05%20130004.png"/>
+</p>
 
-## Available Scripts
+## Live Demo 👉
+Explore our live demo by clicking [here](https://treasurease-ecommerce.vercel.app/).
 
-In the project directory, you can run:
+<b>Demo user:</b><br/>
+Email: demo@gmail.com<br/>
+Password: 123
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features ✨
+- User-friendly and responsive design
+- Product categories and search functionality
+- Product add to cart with pop up 
+- Product details page with images, descriptions, and reviews
+- Shopping cart with the ability to add/remove items
+- User authentication with local storage
+- Items added to local storage 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technology Used 🔧
+- React.js ⚛️
+- HTML 📄
+- CSS 🎨
+- JavaScript 🚀
+- VS Code 🖥️
+- Scss 🎨
+- Git ⚙️
+- Github ⚒️
 
-### `npm test`
+## Store Image 🏪
+![E-Commerce Store](https://github.com/Sandy712/Ecommerce_website/blob/master/Image/Screenshot%202023-08-04%20211853.png)
+![E-Commerce Store](https://github.com/Sandy712/Ecommerce_website/blob/master/Image/Screenshot%202023-08-04%20211934.png)
+![E-Commerce Store](https://github.com/Sandy712/Ecommerce_website/blob/master/Image/Screenshot%202023-08-04%20212041.png)
+![E-Commerce Store](https://github.com/Sandy712/Ecommerce_website/blob/master/Image/Screenshot%202023-08-04%20212420.png)
+![E-Commerce Store](https://github.com/Sandy712/Ecommerce_website/blob/master/Image/Screenshot%202023-08-04%20213357.png)
+![E-Commerce Store](https://github.com/Sandy712/Ecommerce_website/blob/master/Image/Screenshot%202023-08-04%20213422.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation and Setup 🚀
+Follow these steps to run the E-Commerce website locally:
+1. Clone the repository:
+   ```
+   git clone https://github.com/Sandy712/Ecommerce_website.git
+   ```
+2. Navigate to the project directory:
+   ```
+   cd Ecommerce_website
+   ```
+3. Install the dependencies:
+   ```
+   npm install
+   ```
+4. Start the development server:
+   ```
+   npm start
+   ```
+5. Open your web browser and visit `http://localhost:3000` to access the website.
 
-### `npm run build`
+## Feedback 💌
+We value your feedback! If you encounter any issues or have suggestions for improvement, please feel free to [create an issue](https://github.com/Sandy712/Ecommerce_website.git/issues) on our GitHub repository.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Contribute 🤝
+We welcome contributions to enhance the E-Commerce website. If you'd like to contribute, please follow our [contribution guidelines](CONTRIBUTING.md).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Happy shopping! 🛍️
