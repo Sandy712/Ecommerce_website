@@ -100,10 +100,10 @@ export default function Footer() {
               TreasurEaseBuy@gmail.com
               </p>
               <p>
-                  +91 9174595317
+                  <a href = "mailto: udaysolanki530@gmail.com" style={{textDecoration:'none' , color:'white'}}>udaysolanki530@gmail.com</a>
               </p>
               <p>
-                  +91 78982 87715
+                   <a href = "mailto: sandeepprajapat200@gmail.com" style={{textDecoration:'none' , color:'white'}}>sandeepprajapat200@gmail.com</a>
               </p>
             </MDBCol>
           </MDBRow>
@@ -126,7 +126,7 @@ export default function Footer() {
 
       <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
         © 2023 Copyright:
-        <a className='text-white' href='!'>
+        <a className='text-white' href=''>
         TreasurEase.com
         </a>
       </div>
