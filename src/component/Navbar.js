@@ -68,7 +68,7 @@ export default function Navbar() {
             </Link>
           </li>
           <li className="nav-item mx-2 my-1">
-            <Link className="nav-link active element" to="#box" tabindex="-1" aria-disabled="true"
+            <Link className="nav-link active element" to="#box" tabIndex="-1" aria-disabled="true"
             style={{
               fontWeight: "bold",
               borderRadius: 9,

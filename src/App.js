@@ -1,4 +1,4 @@
-import { useState, createContext, useEffect } from "react";
+import { useState, createContext, useEffect, lazy, Suspense } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {
   BrowserRouter as Router,
@@ -7,17 +7,17 @@ import {
   Navigate,
 } from "react-router-dom";
 import Navbar from "./component/Navbar";
-import Home from "./component/Pages/Home";
 import Footer from "./component/Footer";
-import Cartpage from "./component/Pages/Cartpage";
 import "./component/style/style.scss";
-import Shoppage from "./component/Pages/Shoppage";
-import ProductsDetail from "./component/Layout/ProductsDetail";
-import Login from "./component/Login";
-import Signup from "./component/Signup";
 import Exclusive from "./component/Pages/Exclusive";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+const Home = lazy(() => import("./component/Pages/Home"));
+const Shoppage = lazy(() => import("./component/Pages/Shoppage"));
+const ProductsDetail = lazy(() => import("./component/Layout/ProductsDetail"));
+const Cartpage = lazy(() => import("./component/Pages/Cartpage"));
+const Login = lazy(() => import("./component/Login"));
+const Signup = lazy(() => import("./component/Signup"));
 
 export const DataContainer = createContext();
 
@@ -97,52 +97,54 @@ function App() {
         setUsersData,
       }}
     >
-      <Router>
-        <ToastContainer
-          position="top-right"
-          autoClose={1000}
-          hideProgressBar={false}
-          newestOnTop={false}
-          closeOnClick
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-          theme="colored"
-        />
-        <Navbar />
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          {/* <Route exact path="/signin" element={<Login/>} /> */}
-          <Route
-            exact
-            path="/shop"
-            element={loggedIn ? <Shoppage /> : <Navigate to="/login" />}
+      <Suspense>
+        <Router>
+          <ToastContainer
+            position="top-right"
+            autoClose={1000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="colored"
           />
-          <Route exact path="/shop/:id" element={<ProductsDetail />} />
-          <Route
-            exact
-            path="/cart"
-            element={loggedIn ? <Cartpage /> : <Navigate to="/login" />}
-          />
-          <Route
-            exact
-            path="/Login"
-            element={!loggedIn ? <Login /> : <Navigate to="/" />}
-          />
-          <Route
-            exact
-            path="/Signup"
-            element={!loggedIn ? <Signup /> : <Navigate to="/" />}
-          />
-          <Route
-            exact
-            path="/Exclusive"
-            element={loggedIn ? <Exclusive /> : <Navigate to="/login" />}
-          />
-        </Routes>
-        <Footer />
-      </Router>
+          <Navbar />
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            {/* <Route exact path="/signin" element={<Login/>} /> */}
+            <Route
+              exact
+              path="/shop"
+              element={loggedIn ? <Shoppage /> : <Navigate to="/login" />}
+            />
+            <Route exact path="/shop/:id" element={<ProductsDetail />} />
+            <Route
+              exact
+              path="/cart"
+              element={loggedIn ? <Cartpage /> : <Navigate to="/login" />}
+            />
+            <Route
+              exact
+              path="/Login"
+              element={!loggedIn ? <Login /> : <Navigate to="/" />}
+            />
+            <Route
+              exact
+              path="/Signup"
+              element={!loggedIn ? <Signup /> : <Navigate to="/" />}
+            />
+            <Route
+              exact
+              path="/Exclusive"
+              element={loggedIn ? <Exclusive /> : <Navigate to="/login" />}
+            />
+          </Routes>
+          <Footer />
+        </Router>
+      </Suspense>
     </DataContainer.Provider>
   );
 }
