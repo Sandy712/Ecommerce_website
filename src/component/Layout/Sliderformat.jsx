@@ -20,7 +20,7 @@ export default function Sliderformat({title,desc,cover}) {
             <img className='img ' src={cover} alt="#" />
           </Col>
         </Row>
-        <h2 className='note'>50% Off Your First Shopping </h2>
+        {/* <h2 className='note'>50% Off Your First Shopping </h2> */}
     </Container>
 
   )
